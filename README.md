@@ -1,34 +1,19 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Whop Apps Template
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwhopio%2Fwhop-apps-template&env=WHOP_JWK_PK,API_KEY,NEXT_PUBLIC_WHOP_APP_ID&envDescription=These%20API%20keys%20are%20needed%20for%20the%20SDK%20to%20work&envLink=https%3A%2F%2Fdev.whop.com%2Fapps%2Fcreate-an-app%23environment-variables)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Click on `Use this template` to copy the template or run the following command
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`yarn create next-app --example https://github.com/whopio/whop-apps-template`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This will create a Next.js application with the [**Whop Apps SDK**](https://dev.whop.com/apps/sdks) & [**Frosted UI**](https://dev.whop.com/apps/frosted) installed.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For the SDK to work, you will need to add the following environment variables to your project:
 
-## Learn More
+- **WHOP_JWK_PK**
+- **API_KEY**
+- **NEXT_PUBLIC_WHOP_APP_ID**
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To learn more about building apps on Whop, head [**here**](https://dev.whop.com/apps/create-an-app).
