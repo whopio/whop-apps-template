@@ -1,6 +1,5 @@
-"use client";
-import { Toaster, TooltipProvider } from "@whop/frosted-ui";
 import "@whop/frosted-ui/index.css";
+import { ClientProviders } from "./providers.client";
 
 export default function RootLayout({
   children,
@@ -8,9 +7,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <TooltipProvider>
-      {children}
-      <Toaster />
-    </TooltipProvider>
+    <html lang="en">
+      <body>
+        <ClientProviders>{children}</ClientProviders>
+      </body>
+    </html>
   );
 }
