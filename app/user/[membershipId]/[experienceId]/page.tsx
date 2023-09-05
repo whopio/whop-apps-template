@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function AdminPage({
   params,
 }: {
-  params: { companyId: string; experienceId: string };
+  params: { membershipId: string; experienceId: string };
 }) {
   try {
     await validateToken({ headers }); // This will ensure only authenticated users can access this page
@@ -28,13 +28,12 @@ export default async function AdminPage({
       </div>
     );
   }
-
-  const companyId = params.companyId;
+  const membershipId = params.membershipId;
   const experienceId = params.experienceId;
 
   return (
     <div>
-      Company ID: {companyId}
+      Membership ID: {membershipId}
       Experience ID: {experienceId}
     </div>
   );
