@@ -1,8 +1,7 @@
-import { validateToken } from "@whop-apps/sdk";
+import { validateToken, whopJson } from "@whop-apps/sdk";
 import { headers } from "next/headers";
-import Link from "next/link";
 
-export default async function AdminPage({
+export default async function UserPage({
   params,
 }: {
   params: { membershipId: string; experienceId: string };
@@ -11,30 +10,27 @@ export default async function AdminPage({
     await validateToken({ headers }); // This will ensure only authenticated users can access this page
   } catch (error) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center space-y-4">
+      <div className="h-screen flex flex-col items-center justify-center">
         <p>
           If you are the developer, make sure to develop within the Whop iFrame
           so the cookies are set correctly.
         </p>
-        <span>
-          For more information, check out{" "}
-          <Link
-            href="https://dev.whop.com/apps/create-an-app"
-            className="text-blue-500 underline hover:text-blue-700"
-          >
-            this guide
-          </Link>{" "}
-        </span>
       </div>
     );
   }
-  const membershipId = params.membershipId;
+
+  const companyId = params.membershipId;
   const experienceId = params.experienceId;
+
+  const authenticatedUser = await whopJson("/me", { headers }); // Using the Whop SDK to fetch information about the authenticated user
+  const { email, profile_pic_url, id, username } = authenticatedUser; // Destructuring the response
 
   return (
     <div>
-      Membership ID: {membershipId}
-      Experience ID: {experienceId}
+      <p>Company ID: {companyId}</p>
+      <p>Experience ID: {experienceId}</p>
+      <p>User: Email: {email}</p>
+      <p>Username: {username}</p>
     </div>
   );
 }

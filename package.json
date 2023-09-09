@@ -13,7 +13,7 @@
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "@whop-apps/sdk": "^0.0.1-canary.2",
+    "@whop-apps/sdk": "^0.0.1-canary.3",
     "@whop/frosted-ui": "^0.0.1-canary.12",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
