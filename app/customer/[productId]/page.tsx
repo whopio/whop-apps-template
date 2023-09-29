@@ -1,4 +1,4 @@
-import { validateToken, WhopAPI } from "@whop-apps/sdk";
+import { validateToken, WhopAPI, hasAccess } from "@whop-apps/sdk";
 import { headers } from "next/headers";
 import OpenButton from "@/components/OpenButton";
 
@@ -8,12 +8,19 @@ export default async function UserPage({
   params: { productId: string };
 }) {
   try {
-    await validateToken({ headers }); // This will ensure only authenticated users can access this page
+    const { userId } = await validateToken({ headers });
 
-    const user = await WhopAPI.user({ headers }).GET("/me", {}); // This will fetch the user's information
+    const access = await hasAccess({ to: params.productId, headers }); // Checking if the user has access to the product
+
+    if (!access) {
+      return <p>You do not have access to this product</p>;
+    }
+
+    const user = await WhopAPI.me({ headers }).GET("/me", {});
 
     return (
       <div className="pt-5 space-y-2">
+        <p>User ID: {userId}</p>
         <p>Username: {user.data?.username}</p>
         <p>Email: {user.data?.email}</p>
         <p>Product ID: {params.productId}</p>

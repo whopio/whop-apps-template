@@ -15,8 +15,8 @@ dependencies:
     specifier: 18.2.7
     version: 18.2.7
   '@whop-apps/sdk':
-    specifier: ^0.0.1-canary.7
-    version: 0.0.1-canary.7
+    specifier: ^0.0.1-canary.12
+    version: 0.0.1-canary.12
   autoprefixer:
     specifier: 10.4.15
     version: 10.4.15(postcss@8.4.30)
@@ -372,61 +372,61 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: false
 
-  /@whop-apps/api@0.0.1-canary.7:
-    resolution: {integrity: sha512-Tllogxfiw8SxpTNIkEY51abrj1KR/44lRf1bVON2uWuYb2IeaRZ2doyfXUmAWo1dW7bQJT39chW9LXZAtbEBdQ==}
+  /@whop-apps/api@0.0.1-canary.12:
+    resolution: {integrity: sha512-rfQEjaiiC4EoF5grA5QVsEcOplyhh5ZY9Ra7kMRlRUjzD5XqIeNm/QpbnQk+lvq100V2kt92eN6w92IucQ7/Cg==}
     dependencies:
-      '@whop-apps/auth': 0.0.1-canary.7
-      '@whop-apps/core': 0.0.1-canary.7
+      '@whop-apps/auth': 0.0.1-canary.12
+      '@whop-apps/core': 0.0.1-canary.12
       openapi-typescript-helpers: 0.0.2
     dev: false
 
-  /@whop-apps/auth@0.0.1-canary.7:
-    resolution: {integrity: sha512-DihyZx+2H7PcERJ+UvR3BImIUhrebaP3AjMknV7xGa/YRjlzISx1eLnInNAGSgEvpNYfeKMUoCA+zNUmCMOBHA==}
+  /@whop-apps/auth@0.0.1-canary.12:
+    resolution: {integrity: sha512-4K/ISR/IcR8tPHzYKqaeCLWJRF01jmtB+tFp5vNs+8GNj2GbCbTYjHsi/G5rxJquK3IQ6ZbStJL+Om8N14KX3A==}
     dependencies:
-      '@whop-apps/core': 0.0.1-canary.7
+      '@whop-apps/core': 0.0.1-canary.12
       cookie: 0.5.0
       jose: 4.14.6
     dev: false
 
-  /@whop-apps/core@0.0.1-canary.7:
-    resolution: {integrity: sha512-u1lZAOhZNrLRTl8iJTbYfG1N+jfURQad5VzjzRNIhKPOHEoF2vDs0bQDPPcuckBc5qKd8C/nQWCgOJpxEQp2bA==}
+  /@whop-apps/core@0.0.1-canary.12:
+    resolution: {integrity: sha512-dZzUd0akvl01b/qFYQg/JUC7FjPal5zGbyfmKzUt0Y61ZvX6LMLvgKpptfpZyW/SR7i5UyJ/VMUcY+dE2Yj0JQ==}
     dev: false
 
-  /@whop-apps/dev-proxy@0.0.1-canary.7:
-    resolution: {integrity: sha512-3rE1Vul8zhqAEU7S0dl41CKxn/SNndrgIMw7gz3PKcRjUgYV+qBjN2PWtVF7dCMf9hWSp8gH1c8Zpr5HP9HodA==}
+  /@whop-apps/dev-proxy@0.0.1-canary.12:
+    resolution: {integrity: sha512-9Mjus/t1ZVzaWaTWkYS1Saib+19kuvJLuRFYnhYkWWTzzN5+rPKlkbRuYK3502k9TFhRxD9JvO/Jk0Qv+V6FWQ==}
     hasBin: true
     dependencies:
       '@types/http-proxy': 1.17.12
-      '@whop-apps/core': 0.0.1-canary.7
+      '@whop-apps/core': 0.0.1-canary.12
       cookie: 0.5.0
       http-proxy: 1.18.1
     transitivePeerDependencies:
       - debug
     dev: false
 
-  /@whop-apps/iframe@0.0.1-canary.7:
-    resolution: {integrity: sha512-yaerrr2mBeEyzcW32wyKjnPgQPLjF99B7VjIKvsXP2sZ/mVgrt++B8truLMMklWIoO5NeHKNH9T3HYUvlkUmGQ==}
+  /@whop-apps/iframe@0.0.1-canary.12:
+    resolution: {integrity: sha512-773hGmN+g5Wty5+ZJe/01Bpt0rVpexqfTa/4RNG7StyhwnvKJ1DXky7PTmXppT2mMu6oghlwBvFLn4JBlM0r7Q==}
     dependencies:
-      '@whop-apps/core': 0.0.1-canary.7
-      '@whop-apps/typed-transport': 0.0.1-canary.7
+      '@whop-apps/core': 0.0.1-canary.12
+      '@whop-apps/typed-transport': 0.0.1-canary.12
       zod: 3.22.2
     dev: false
 
-  /@whop-apps/sdk@0.0.1-canary.7:
-    resolution: {integrity: sha512-Xhccc2sX5fHJehy0L+uoFoN3VoCMhtjttNRpNZJToGTA5mAPqQNyIymAIqSuZg3PRW9hAvY0NJIPyjqU7r4jSA==}
+  /@whop-apps/sdk@0.0.1-canary.12:
+    resolution: {integrity: sha512-ejGAUNbFkW2a35HE/8kHCrOjfD85+Ka/mCmS0Zj8OFjhmIH/B88suU2NZDSS6ZDd/kfDtnJplijC2xANPbVJhw==}
     hasBin: true
     dependencies:
-      '@whop-apps/api': 0.0.1-canary.7
-      '@whop-apps/auth': 0.0.1-canary.7
-      '@whop-apps/core': 0.0.1-canary.7
-      '@whop-apps/dev-proxy': 0.0.1-canary.7
-      '@whop-apps/iframe': 0.0.1-canary.7
+      '@whop-apps/api': 0.0.1-canary.12
+      '@whop-apps/auth': 0.0.1-canary.12
+      '@whop-apps/core': 0.0.1-canary.12
+      '@whop-apps/dev-proxy': 0.0.1-canary.12
+      '@whop-apps/iframe': 0.0.1-canary.12
     transitivePeerDependencies:
       - debug
     dev: false
 
-  /@whop-apps/typed-transport@0.0.1-canary.7:
-    resolution: {integrity: sha512-hPJ74eYzaArXecv3ZewKYri60E+1BDKvQSjerfMxIk7vITB01eD0Ly4PNA6TVee7qtM3Be90n4rTmNaPb1+4IQ==}
+  /@whop-apps/typed-transport@0.0.1-canary.12:
+    resolution: {integrity: sha512-MVmoe/VVQyl9NU+oTbz+Gu9odDX22iwNThtATluq3eRNTWJvgP97xvhA3KzSTh/5WHJ4ATwBkGnThOMyQzd4Zg==}
     dependencies:
       zod: 3.22.2
     dev: false
