@@ -6,37 +6,37 @@ const tasks = [
     title: "Create your app on Whop",
     description:
       "To get started, create your App on Whop to get the credentials",
-    href: "https://whop-staging.mintlify.app/apps/getting-started",
+    href: "https://dev.whop.com/apps/overview",
   },
   {
     title: "Add your environment variables",
     description:
       "Add your environment variables to the project. This is required for the Whop SDK to function.",
-    href: "https://whop-staging.mintlify.app/apps/environment#environment-variables",
+    href: "https://dev.whop.com/apps/create-an-app#step-6-setup-your-environment-variables",
   },
   {
     title: "Learn about page variables",
     description:
       "Page variables allow you to access information about who the company is, and who the user using it is",
-    href: "https://whop-staging.mintlify.app/apps/page-setup",
+    href: "https://dev.whop.com/apps/views",
   },
   {
     title: "Learn how to authenticate users",
     description:
       "Learn how to authenticate users using the Whop SDK. This ensures only authenticated users can access your app.",
-    href: "https://whop-staging.mintlify.app/apps/page-setup#authenticating-a-user",
+    href: "https://dev.whop.com/sdk/has-access",
   },
   {
     title: "Learn how to use our API",
     description:
       "Learn how to use our API to fetch information about the company, user, products, and more.",
-    href: "https://whop-staging.mintlify.app/apps/final-steps",
+    href: "https://dev.whop.com/sdk/api",
   },
   {
     title: "Sell your app on Whop",
     description:
       "Once you are done building your app, you can sell it on Whop to anyone in the world.",
-    href: "https://whop-staging.mintlify.app/apps/final-steps",
+    href: "https://dev.whop.com/apps/deploying",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Home() {
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">
-            app/admin/.../page.tsx or app/user/.../page.tsx
+            app/seller/.../page.tsx or app/user/.../page.tsx
           </code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
