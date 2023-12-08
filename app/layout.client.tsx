@@ -1,7 +1,7 @@
-"use client"; // this line is important
-import { FC, PropsWithChildren } from "react";
+"use client";
 import "@/lib/iframe";
+import { PropsWithChildren } from "react";
 
-export const ClientLayout: FC<PropsWithChildren> = ({ children }) => {
-  return <>{children}</>;
-};
+export function ClientLayout({ children }: PropsWithChildren) {
+  return children;
+}

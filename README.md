@@ -1,12 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Before starting your work, make sure you update to the latest version of NextJS.
 
 ## Getting started
 
-This template includes everything you need to get started building an app on Whop. It comes pre-installed with the [**Apps SDK**](https://apps.whop.com/sdk) which has all the tool you need to get building.
+This template includes everything you need to get started building an app on Whop. It comes pre-installed with the [**Apps SDK**](https://dev.whop.com/sdk) which has all the tool you need to get building. It also comes preinstalled with [**Frosted UI**](https://github.com/whopio/frosted-ui/), our UI kit.
 
-To use this template, you will need to make sure the `.env.local` file is populated with the correct values, the SDK needs these to work. You can find more information about where to get all of these values [**here**](https://apps.whop.com/apps/environment#environment-variables)
+To use this template, you will need to make sure the `.env.local` file is populated with the correct values, the SDK needs these to work. You can find more information about where to get all of these values [**here**](https://dev.whop.com/apps/environment#environment-variables)
 
-This is meant to be ran inside of Whop, to learn more about how to setup your app and test it locally, check out [**this guide**](https://apps.whop.com/apps/testing)
+This is meant to be ran inside of Whop, to learn more about how to setup your app and test it locally, check out [**this guide**](https://dev.whop.com/apps/testing)
 
 ---
 
@@ -16,7 +16,7 @@ In the project, you will see 2 pages have been created, `admin` and `user`
 
 The `admin` and `user` routes are what the people using the app will see. `admin` will be for the people using your app on the Whop Dashboard, and the `user` is the consumer using it from whop.com.
 
-To learn more about the functions used in the pages, head to the [**Page Setup Guid**e](https://apps.whop.com/apps/page-setup)
+To learn more about the functions used in the pages, head to the [**Page Setup Guid**e](https://dev.whop.com/apps/page-setup)
 
 ---
 
@@ -24,7 +24,7 @@ To learn more about the functions used in the pages, head to the [**Page Setup G
 
 In the `/webhook` route, there is a webhook handler using the Whop SDK. This is used to receive and handle any webhooks that get sent from Whop, such as when a membership goes valid, or a payment goes through.
 
-To learn more about how the webhook functions work, head to the [**Webhooks Guide**](https://apps.whop.com/sdk/webhooks)
+To learn more about how the webhook functions work, head to the [**Webhooks Guide**](https://dev.whop.com/sdk/webhooks)
 
 ---
 

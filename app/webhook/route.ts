@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
       // Handle event here
       // This will automatically return success to the Whop server, so you don't need to return anything here
 
-      console.log(action); // This will output "membership_went_valid"
+      console.log(action); // This will output "membership.went_valid"
       const userId = data.user_id;
       const membershipId = data.id;
     },
@@ -19,5 +19,13 @@ export async function POST(req: NextRequest) {
     paymentFailed({ action, data }) {},
 
     paymentSucceeded({ action, data }) {},
+
+    appMembershipWentValid({ action, data }) {},
+
+    appMembershipWentInvalid({ action, data }) {},
+
+    appPaymentSucceeded({ action, data }) {},
+
+    appPaymentFailed({ action, data }) {},
   });
 }
