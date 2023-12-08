@@ -5,7 +5,7 @@ export type PageProps<
   Query extends string = string
 > = {
   params: Record<Params, string>;
-  query: Record<Query, string | undefined>;
+  searchParams: Record<Query, string | undefined>;
 };
 
 export type LayoutProps<

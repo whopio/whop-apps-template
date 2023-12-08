@@ -11,7 +11,10 @@ export function ThemeSwitcherButton({
 }) {
   const { onAccentColorChange } = useThemeContext();
 
-  const onClick = useCallback(() => onAccentColorChange(color), [color]);
+  const onClick = useCallback(
+    () => onAccentColorChange(color),
+    [color, onAccentColorChange]
+  );
 
   return (
     <Button onClick={onClick} size="1" variant="classic" color={color}>

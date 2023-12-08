@@ -2,7 +2,7 @@ import { PageProps } from "@/lib/types";
 import { WhopAPI, authorizedUserOn, hasAccess } from "@whop-apps/sdk";
 import { headers } from "next/headers";
 
-export async function Page({
+export default async function Page({
   params: { experienceId },
 }: PageProps<"experienceId">) {
   // Fetch information about experience

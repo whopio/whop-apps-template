@@ -83,7 +83,9 @@ export default function Home() {
         </Grid>
 
         <Flex direction="column" gap="2">
-          <Heading size="3">Don't like this theme? Choose your own</Heading>
+          <Heading size="3">
+            Don&apos;t like this theme? Choose your own
+          </Heading>
           <Flex gap="1" width="100%" className="overflow-auto">
             {themeAccentColorsOrdered.map((color) => (
               <ThemeSwitcherButton key={color} color={color} />

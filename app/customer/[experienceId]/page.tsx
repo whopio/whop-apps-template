@@ -9,7 +9,7 @@ const myDatabase = {
   },
 };
 
-export async function Page({
+export default async function Page({
   params: { experienceId },
 }: PageProps<"experienceId">) {
   // Ensure user has purchased your product

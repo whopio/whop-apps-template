@@ -2,14 +2,7 @@ import { PageProps } from "@/lib/types";
 import { validateCheckoutSession, validateToken } from "@whop-apps/sdk";
 import { headers } from "next/headers";
 
-// Replace this with an actual database
-const myDatabase = {
-  getContent: async (experienceId: string) => {
-    return "Hello World";
-  },
-};
-
-export async function Page({
+export default async function Page({
   params: { checkoutSessionId: unvalidatedCheckoutSessionId },
 }: PageProps<"checkoutSessionId">) {
   // Validate the checkout session id

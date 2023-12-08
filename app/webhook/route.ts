@@ -1,6 +1,8 @@
 import { makeWebhookHandler } from "@whop-apps/sdk";
 import { NextRequest } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 const handleWebhook = makeWebhookHandler();
 
 export async function POST(req: NextRequest) {
