@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@whop-apps/sdk':
-    specifier: 0.0.1-canary.34
-    version: 0.0.1-canary.34
+    specifier: 0.0.1-canary.35
+    version: 0.0.1-canary.35
   frosted-ui:
     specifier: 0.0.1-canary.10
     version: 0.0.1-canary.10(@types/react-dom@18.2.17)(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0)
@@ -629,10 +629,10 @@ packages:
   /@radix-ui/react-dismissable-layer@1.0.5(@types/react-dom@18.2.17)(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-aJeDjQhywg9LBu2t/At58hCvr7pEm0o2Ke1x33B+MhjNmmZ17sy4KImo0KPLgsnc/zN7GPdce8Cnn0SWvwZO7g==}
     peerDependencies:
-      '@types/react': 18.2.14
-      '@types/react-dom': 18.2.7
-      react: 18.2.0
-      react-dom: 18.2.0
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -835,10 +835,10 @@ packages:
   /@radix-ui/react-popper@1.1.3(@types/react-dom@18.2.17)(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-cKpopj/5RHZWjrbF2846jBNacjQVwkP068DfmgrNJXpvVWrOvlAmE9xSiy5OqeE+Gi8D9fP+oDhUnPqNMY8/5w==}
     peerDependencies:
-      '@types/react': 18.2.14
-      '@types/react-dom': 18.2.7
-      react: 18.2.0
-      react-dom: 18.2.0
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -1470,33 +1470,33 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@whop-apps/api@0.0.1-canary.34:
-    resolution: {integrity: sha512-YVTPFWkNo6ap0YsKFidmqNF4yae0cbZYnlnlkl7oiG4iseoqVHZUL74J7qSrQNDXwBBKmejOPVFyIhmJtzN9Hw==}
+  /@whop-apps/api@0.0.1-canary.35:
+    resolution: {integrity: sha512-rO8i76zu4Wd3aksFbSn4jwgy5g9WNDeH8y0i8GKSRCUr4fiW+M+lyP9LSr/9StuPRkvI39Fnz4no3B78G1dYhw==}
     dependencies:
-      '@whop-apps/auth': 0.0.1-canary.34
-      '@whop-apps/core': 0.0.1-canary.34
-      '@whop-apps/typed-api': 0.0.1-canary.34
+      '@whop-apps/auth': 0.0.1-canary.35
+      '@whop-apps/core': 0.0.1-canary.35
+      '@whop-apps/typed-api': 0.0.1-canary.35
       openapi-typescript-helpers: 0.0.2
     dev: false
 
-  /@whop-apps/auth@0.0.1-canary.34:
-    resolution: {integrity: sha512-U9Sib6E1n94QZbdHvnn8x6WFn1rDmVd1JcL4+n5wDQBOLgDn3Bq8s797yycLBQI0WA/25PDTrcGVEtpHpNze4g==}
+  /@whop-apps/auth@0.0.1-canary.35:
+    resolution: {integrity: sha512-2SeQQrQMhnyY0E/4tCC2+fOK6KTWa+qjL020gAubNeORHOO+dlIELu2k1nzUyqcblNbbNwPiF8HnIUKf7J7Qkg==}
     dependencies:
-      '@whop-apps/core': 0.0.1-canary.34
+      '@whop-apps/core': 0.0.1-canary.35
       cookie: 0.5.0
       jose: 4.15.4
     dev: false
 
-  /@whop-apps/core@0.0.1-canary.34:
-    resolution: {integrity: sha512-BYS1rgjqwFKfh+zmVUd+rnaJOueoqfvTrR1EMb37uDKxE3YCCMHCnUuc2SiHqRclvUnFm3Jf46AdbMBoxHXpxw==}
+  /@whop-apps/core@0.0.1-canary.35:
+    resolution: {integrity: sha512-6qfV9NR70y+oHEDdbolz9s2wqKcsiQHsIvpxtLZwXTOMSbKFNhO/WwIjSwqePOJlp7Xfu6mzticEfWG/U5NxPQ==}
     dev: false
 
-  /@whop-apps/dev-proxy@0.0.1-canary.34:
-    resolution: {integrity: sha512-azJNNMF1a+nYGbmuspwLRwxqoRR5wGJf6nJGndPzDjMuCfQsUyqpONdZJRPCnontGeXxFk2Cy+9jg60CWS8U9A==}
+  /@whop-apps/dev-proxy@0.0.1-canary.35:
+    resolution: {integrity: sha512-AF+xcIk/sTloLEhPnXzUkWsFCdQsdDakLVmZDcMq6mWN0sRR3q0voCCTxN8qtWwPvTcSSg5uHSck8NkskR5SEw==}
     hasBin: true
     dependencies:
       '@types/http-proxy': 1.17.14
-      '@whop-apps/core': 0.0.1-canary.34
+      '@whop-apps/core': 0.0.1-canary.35
       cookie: 0.5.0
       http-proxy: 1.18.1
       jose: 4.15.4
@@ -1504,36 +1504,36 @@ packages:
       - debug
     dev: false
 
-  /@whop-apps/iframe@0.0.1-canary.34:
-    resolution: {integrity: sha512-NkROYew2t4+m7p8G/tVGk+QK3wXK5TyjFzvgSqdO6bt0GJEhsp/cwIJvIYcaTx8ABbOqJx8Qiw74yDUtashydA==}
+  /@whop-apps/iframe@0.0.1-canary.35:
+    resolution: {integrity: sha512-B4/em8ASNGrvcT9rlsTzxdiVOAp6T/fWI2dEHK7UiUnNIoUKuT7vL6RANTEw4sg8FPM/oSWROXX75Wy/xrA7pA==}
     dependencies:
-      '@whop-apps/core': 0.0.1-canary.34
-      '@whop-apps/typed-transport': 0.0.1-canary.34
+      '@whop-apps/core': 0.0.1-canary.35
+      '@whop-apps/typed-transport': 0.0.1-canary.35
       zod: 3.22.4
     dev: false
 
-  /@whop-apps/sdk@0.0.1-canary.34:
-    resolution: {integrity: sha512-2V917ruLhf2S7YDXFh+w69s/3z+AqTI1iAqNnoIf9Zh83OG8/39fYK9NGfawgm/S/RP+9vRDkpmCQ6Mahn1kNQ==}
+  /@whop-apps/sdk@0.0.1-canary.35:
+    resolution: {integrity: sha512-DBcMXmKzBtHi/FKXfcGo45+3KY5OtRH50ns6l1YP69og88D+GlRpTni6YWlp4diIhBCeIenKcgdEVuIDhelBHg==}
     hasBin: true
     dependencies:
-      '@whop-apps/api': 0.0.1-canary.34
-      '@whop-apps/auth': 0.0.1-canary.34
-      '@whop-apps/core': 0.0.1-canary.34
-      '@whop-apps/dev-proxy': 0.0.1-canary.34
-      '@whop-apps/iframe': 0.0.1-canary.34
+      '@whop-apps/api': 0.0.1-canary.35
+      '@whop-apps/auth': 0.0.1-canary.35
+      '@whop-apps/core': 0.0.1-canary.35
+      '@whop-apps/dev-proxy': 0.0.1-canary.35
+      '@whop-apps/iframe': 0.0.1-canary.35
     transitivePeerDependencies:
       - debug
     dev: false
 
-  /@whop-apps/typed-api@0.0.1-canary.34:
-    resolution: {integrity: sha512-4f0/xr+UqEvZ31Hry3IsRKAgNuIpHGaOXPurVR5OLaXBhDBc3b2wQn/mG+lgHHpUQSZJ3yZOYsN8+On4JCGifg==}
+  /@whop-apps/typed-api@0.0.1-canary.35:
+    resolution: {integrity: sha512-TpzKY6nGbgJRlcP5Aw+b9ztSm9b577vffS44KCbo2anhGlf4/fwoI8kIjbSdV343kQa/rzQFeRMJ/YtUsLi+Tg==}
     hasBin: true
     dependencies:
-      '@whop-apps/core': 0.0.1-canary.34
+      '@whop-apps/core': 0.0.1-canary.35
     dev: false
 
-  /@whop-apps/typed-transport@0.0.1-canary.34:
-    resolution: {integrity: sha512-enyQM9eaPt+P80PPOgKc+giAaYgUZiiuvw27PQ/pXwkjcZuGeKxB/+0A5UFxE2KK2YRlk5AOQ5xNjNZaERKJRA==}
+  /@whop-apps/typed-transport@0.0.1-canary.35:
+    resolution: {integrity: sha512-nLijjT3/gYuqTCDOs41uP9gzO4Og6af9lQ0zHFTSKdCvnzpwykzVB9x3F8z/sOpSr/P1EXSPR3SPjDezIl8QAw==}
     dependencies:
       zod: 3.22.4
     dev: false

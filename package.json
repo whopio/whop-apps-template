@@ -10,7 +10,7 @@
     "whop-proxy": "whop-proxy"
   },
   "dependencies": {
-    "@whop-apps/sdk": "0.0.1-canary.34",
+    "@whop-apps/sdk": "0.0.1-canary.35",
     "frosted-ui": "0.0.1-canary.10",
     "next": "14.0.4",
     "react": "^18",
