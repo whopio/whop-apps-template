@@ -28,7 +28,10 @@ export default function RootLayout({
         <ClientLayout>
           <Theme>{children}</Theme>
         </ClientLayout>
-        <Script src="/_whop/analytics/init.js" strategy="afterInteractive" />
+        <Script
+          src="/_whop/analytics/analytics-v1.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
