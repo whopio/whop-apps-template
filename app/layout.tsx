@@ -2,6 +2,7 @@ import { Theme } from "frosted-ui";
 import "frosted-ui/styles.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ClientLayout } from "./layout.client";
 
@@ -22,11 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.variable}>
         <ClientLayout>
           <Theme>{children}</Theme>
         </ClientLayout>
+        <Script src="/_whop/analytics/init.js" strategy="afterInteractive" />
       </body>
     </html>
   );
