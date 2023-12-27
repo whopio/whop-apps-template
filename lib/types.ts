@@ -8,7 +8,6 @@ export type PageProps<
   searchParams: Record<Query, string | undefined>;
 };
 
-export type LayoutProps<
-  Params extends string = never,
-  Query extends string = string
-> = PropsWithChildren<PageProps<Params, Query>>;
+export type LayoutProps<Params extends string = never> = PropsWithChildren<
+  Omit<PageProps<Params>, "searchParams">
+>;
