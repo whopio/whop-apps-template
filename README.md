@@ -43,7 +43,7 @@ This is the **customer view**. It will be accessible by customers on whop.com af
 This the **checkout view**. It will be accessible by customers when checking out a product on whop.com that has this app added to it.
 
 
-To learn more about the different views, check out this [**list of views**](https://dev.whop.com/apps/create-an-app#step-8-start-a-local-development-server).
+To learn more about the different views, check out this [**list of views**](https://dev.whop.com/apps/views).
 
 ---
 
